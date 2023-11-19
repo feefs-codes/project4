@@ -10,7 +10,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #eadac0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <Text fill="#945b27" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #ae7a47;" text="RU Pizza" textAlignment="CENTER" BorderPane.alignment="CENTER">
@@ -34,7 +33,7 @@
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../specialtypizzaimage.png" />
+                        <Image url="@../../../../../../GUI_images/specialtypizzas.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -46,7 +45,7 @@
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../createyourownpizzaimage.png" />
+                        <Image url="@../../../../../../GUI_images/createyourownpizza.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -58,7 +57,7 @@
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../currentorderimage.png" />
+                        <Image url="@../../../../../../GUI_images/currentorder.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -70,7 +69,7 @@
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../storeorders.png" />
+                        <Image url="@../../../../../../GUI_images/storeorders.png" />
                      </image>
                   </ImageView>
                </graphic>

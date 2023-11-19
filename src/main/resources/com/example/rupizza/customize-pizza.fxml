@@ -36,7 +36,7 @@
                <children>
                   <ImageView fx:id="supreme_image" fitHeight="137.0" fitWidth="183.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../../../../../../supremepizza.png" />
+                        <Image url="@../../../../../../GUI_images/supremepizza.png" />
                      </image>
                   </ImageView>
                   <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="179.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
