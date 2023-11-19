@@ -29,7 +29,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #740005;" text="Specialty Pizzas" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #740005;" text="Specialty Pizzas" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER" onAction="#openSpecialtyPizzaGUI">
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -41,7 +41,7 @@
                   <Font name="Book Antiqua Bold" size="12.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #c32105;" text="Build Your Own Pizza" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #c32105;" text="Build Your Own Pizza" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" onAction="#openCustomizePizzaGUI">
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -53,7 +53,7 @@
                   <Font name="Book Antiqua Bold" size="12.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="20.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #807e2a;" text="Current Order" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Button alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="20.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #807e2a;" text="Current Order" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" onAction="#openCurrentOrderGUI">
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -65,7 +65,7 @@
                   <Font name="Book Antiqua Bold" size="12.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #444801;" text="Store Orders" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #444801;" text="Store Orders" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" onAction="#openStoreOrdersGUI">
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
