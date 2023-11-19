@@ -29,11 +29,11 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #740005;" text="Specialty Pizzas" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER" onAction="#openSpecialtyPizzaGUI">
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#openSpecialtyPizzaGUI" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #740005;" text="Specialty Pizzas" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../GUI_images/specialtypizzas.png" />
+                        <Image url="@../../../GUI_images/specialtypizzas.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -41,11 +41,11 @@
                   <Font name="Book Antiqua Bold" size="12.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #c32105;" text="Build Your Own Pizza" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" onAction="#openCustomizePizzaGUI">
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#openCustomizePizzaGUI" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #c32105;" text="Build Your Own Pizza" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../GUI_images/createyourownpizza.png" />
+                        <Image url="@../../../GUI_images/createyourownpizza.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -53,11 +53,11 @@
                   <Font name="Book Antiqua Bold" size="12.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="20.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #807e2a;" text="Current Order" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" onAction="#openCurrentOrderGUI">
+            <Button alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="20.0" mnemonicParsing="false" onAction="#openCurrentOrderGUI" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #807e2a;" text="Current Order" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../GUI_images/currentorder.png" />
+                        <Image url="@../../../GUI_images/currentorder.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -65,11 +65,11 @@
                   <Font name="Book Antiqua Bold" size="12.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #444801;" text="Store Orders" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" onAction="#openStoreOrdersGUI">
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#openStoreOrdersGUI" prefHeight="155.0" prefWidth="250.0" style="-fx-background-color: #444801;" text="Store Orders" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <graphic>
                   <ImageView fitHeight="120.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../GUI_images/storeorders.png" />
+                        <Image url="@../../../GUI_images/storeorders.png" />
                      </image>
                   </ImageView>
                </graphic>

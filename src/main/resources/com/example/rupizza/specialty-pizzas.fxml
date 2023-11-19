@@ -35,27 +35,27 @@
                <children>
                   <ImageView fx:id="deluxe_image" fitHeight="115.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../../../../../../GUI_images/deluxepizza.png" />
+                        <Image url="@../../../GUI_images/deluxepizza.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="supreme_image" fitHeight="115.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../../../../../../GUI_images/supremepizza.png" />
+                        <Image url="@../../../GUI_images/supremepizza.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="meatzza_image" fitHeight="115.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../../../../../../GUI_images/meatzzapizza.png" />
+                        <Image url="@../../../GUI_images/meatzzapizza.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="seafood_image" fitHeight="115.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../../../../../../GUI_images/seafoodpizza.png" />
+                        <Image url="@../../../GUI_images/seafoodpizza.png" />
                      </image>
                   </ImageView>
                   <ImageView fx:id="pepperoni_image" fitHeight="115.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                      <image>
-                        <Image url="@../../../../../../GUI_images/pepperonipizza.png" />
+                        <Image url="@../../../GUI_images/pepperonipizza.png" />
                      </image>
                   </ImageView>
                   <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="179.0" GridPane.columnIndex="1" GridPane.rowIndex="2">

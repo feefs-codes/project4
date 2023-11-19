@@ -6,9 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="087bbe68-09b6-4ba8-9431-dbc49bf8c4c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/MainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/PizzaManagerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/PizzaManagerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/createyourownpizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/createyourownpizza.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/currentorder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/currentorder.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/deluxepizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/deluxepizza.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/meatzzapizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/meatzzapizza.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/pepperonipizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/pepperonipizza.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/seafoodpizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/seafoodpizza.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/specialtypizzas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/specialtypizzas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/storeorders.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/storeorders.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_images/supremepizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/supremepizza.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/customize-pizza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/customize-pizza.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/main-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/main-menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/specialty-pizzas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/specialty-pizzas.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +42,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2YNnPNCnafdkGpDMhofNtYNnUnh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/CS213/project3"
+    "last_opened_file_path": "C:/CS213/project4"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -57,6 +66,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\CS213\project4\src\main\resources\com\example\rupizza" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\CS213\project4\src\main\resources" />
+      <recent name="C:\CS213\project4\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.rupizza" />
