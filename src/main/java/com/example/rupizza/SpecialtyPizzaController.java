@@ -123,10 +123,10 @@ public class SpecialtyPizzaController {
         if (currentOrder != null) {
             currentOrder.addToOrder(pizza);
         }
-        // else {
-        //     storeOrders.startNewOrder();
-        //     storeOrders.getCurrentOrder().addToOrder(pizza);
-        // }
+         else {
+             storeOrders.startNewOrder();
+             storeOrders.getCurrentOrder().addToOrder(pizza);
+         }
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Pizza Confirmation");
         alert.setHeaderText(null);

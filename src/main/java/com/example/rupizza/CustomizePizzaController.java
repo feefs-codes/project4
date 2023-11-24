@@ -126,10 +126,10 @@ public class CustomizePizzaController {
         if (currentOrder != null) {
             currentOrder.addToOrder(pizza);
         }
-        // else {
-        //     storeOrders.startNewOrder();
-        //     storeOrders.getCurrentOrder().addToOrder(pizza);
-        // }
+         else {
+             storeOrders.startNewOrder();
+             storeOrders.getCurrentOrder().addToOrder(pizza);
+         }
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Pizza Confirmation");
         alert.setHeaderText("Custom Pizza Added to Order");
