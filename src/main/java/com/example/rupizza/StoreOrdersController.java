@@ -1,9 +1,11 @@
 package com.example.rupizza;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 public class StoreOrdersController {
     @FXML
@@ -64,6 +66,18 @@ public class StoreOrdersController {
     @FXML
     private void handleExportStoreOrdersButtonAction() {
         storeOrders.exportOrders();
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Exported Orders");
+        alert.setHeaderText(null);
+        alert.setContentText("Orders have been exported to store_orders.txt");
+
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.isPresent() && result.get() == ButtonType.OK) {
+            // close the window
+            Stage stage = (Stage) exportStoreOrdersButton.getScene().getWindow();
+            stage.close();
+        }
     }
 
 }

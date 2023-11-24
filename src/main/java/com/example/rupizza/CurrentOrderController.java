@@ -33,6 +33,9 @@ public class CurrentOrderController {
     }
 
     private void updateOrderInfo() {
+        if (storeOrders.getCurrentOrder() == null) {
+            return;
+        }
         List<String> pizzaStrings = storeOrders.getCurrentOrder().getPizzas().stream()
                                        .map(Pizza::toString)
                                        .collect(Collectors.toList());
