@@ -18,6 +18,9 @@
 <?import javafx.scene.text.Text?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rupizza.SpecialtyPizzaController">
+    <fx:define>
+        <ToggleGroup fx:id="sizeToggleGroup" />
+    </fx:define>
    <children>
       <VBox prefHeight="400.0" prefWidth="400.0">
          <children>
@@ -33,7 +36,7 @@
                 <RowConstraints maxHeight="45.60001220703124" minHeight="5.600012207031227" prefHeight="9.800000000000011" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <ImageView fx:id="deluxe_image" fitHeight="115.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                  <ImageView fx:id="pizzaImageView" fitHeight="115.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
                      <image>
                         <Image url="@../../../GUI_images/deluxepizza.png" />
                      </image>
@@ -60,16 +63,12 @@
                   </ImageView>
                   <VBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="179.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <RadioButton alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="22.0" prefWidth="88.0" text="small">
-                           <toggleGroup>
-                              <ToggleGroup fx:id="size" />
-                           </toggleGroup>
-                        </RadioButton>
-                        <RadioButton alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="23.0" prefWidth="88.0" text="medium" toggleGroup="$size" />
-                        <RadioButton alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="large" toggleGroup="$size" />
+                        <RadioButton alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="22.0" prefWidth="88.0" text="small" toggleGroup="$sizeToggleGroup" fx:id="smallRadioButton"/>
+                        <RadioButton alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="23.0" prefWidth="88.0" text="medium" toggleGroup="$sizeToggleGroup" fx:id="mediumRadioButton"/>
+                        <RadioButton alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="large" toggleGroup="$sizeToggleGroup" fx:id="largeRadioButton" />
                      </children>
                   </VBox>
-                  <ComboBox prefHeight="26.0" prefWidth="153.0" promptText="Pizza Type" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox prefHeight="26.0" prefWidth="153.0" promptText="Pizza Type" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="pizzaTypeComboBox"/>
                </children>
             </GridPane>
             <HBox prefHeight="170.0" prefWidth="400.0">
@@ -85,7 +84,7 @@
                     </rowConstraints>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Toppings" GridPane.columnIndex="1" />
-                        <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false" fx:id="toppingsTextArea"/>
                      </children>
                   </GridPane>
                   <GridPane prefHeight="170.0" prefWidth="185.0">
@@ -101,11 +100,11 @@
                     </rowConstraints>
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sauce" GridPane.columnIndex="1" />
-                        <TextField prefHeight="26.0" prefWidth="152.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField prefHeight="26.0" prefWidth="152.0" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false" fx:id="sauceTextField"/>
                         <VBox alignment="CENTER_LEFT" prefHeight="123.0" prefWidth="157.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <children>
-                              <CheckBox mnemonicParsing="false" prefHeight="32.0" prefWidth="108.0" text="Extra Cheese" />
-                              <CheckBox mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" text="Extra Sauce" />
+                              <CheckBox mnemonicParsing="false" prefHeight="32.0" prefWidth="108.0" text="Extra Cheese" fx:id="extraCheeseCheckBox"/>
+                              <CheckBox mnemonicParsing="false" prefHeight="35.0" prefWidth="101.0" text="Extra Sauce" fx:id="extraSauceCheckBox"/>
                            </children>
                         </VBox>
                      </children>
@@ -127,10 +126,10 @@
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Price: $" wrappingWidth="45.974613189697266" />
-                        <TextField />
+                        <TextField editable="false" fx:id="priceTextField"/>
                      </children>
                   </HBox>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="155.0" text="Add to Order" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="155.0" text="Add to Order" GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="orderButton" onAction="#handleOrderButtonAction"/>
                </children>
             </GridPane>
          </children>

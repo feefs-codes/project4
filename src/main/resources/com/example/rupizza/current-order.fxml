@@ -13,6 +13,7 @@
 <?import javafx.scene.text.Text?>
 
 
+<?import javafx.scene.control.ListView?>
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rupizza.CurrentOrderController">
    <children>
       <VBox alignment="CENTER" prefHeight="341.0" prefWidth="645.0">
@@ -48,11 +49,11 @@
                   <RowConstraints maxHeight="22.399996185302726" minHeight="0.0" prefHeight="16.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextArea prefHeight="166.0" prefWidth="617.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ListView prefHeight="166.0" prefWidth="617.0" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="pizzasListView"/>
                   <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="617.0" GridPane.columnIndex="1">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Order Number: " />
-                        <TextField />
+                        <TextField editable="false" fx:id="orderNumber" />
                      </children>
                   </HBox>
                </children>
@@ -69,20 +70,20 @@
                   <RowConstraints maxHeight="62.799975585937496" minHeight="10.0" prefHeight="47.6000244140625" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Remove Pizza" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Place Order" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Remove Pizza" GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="removePizzaButton" onAction="#handleRemovePizzaButtonAction"/>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Place Order" GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="placeOrderButton" onAction="#handlePlaceOrderButtonAction"/>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Subtotal: $" wrappingWidth="63.95391845703125" />
-                        <TextField prefHeight="26.0" prefWidth="142.0" />
+                        <TextField prefHeight="26.0" prefWidth="142.0" editable="false" fx:id="subTotal"/>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Tax: $  " textAlignment="RIGHT" wrappingWidth="87.49876403808594" />
-                        <TextField prefHeight="26.0" prefWidth="86.0" />
+                        <TextField prefHeight="26.0" prefWidth="86.0" editable="false" fx:id="tax"/>
                      </children>
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Order Total: $" wrappingWidth="80.7734375" />
-                        <TextField prefHeight="26.0" prefWidth="299.0" />
+                        <TextField prefHeight="26.0" prefWidth="299.0" editable="false" fx:id="total" />
                      </children>
                   </HBox>
                </children>

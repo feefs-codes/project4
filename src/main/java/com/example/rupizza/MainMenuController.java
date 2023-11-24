@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class MainMenuController {
@@ -80,4 +79,10 @@ public class MainMenuController {
             e.printStackTrace();
         }
     }
+
+    // @FXML
+    // public void initialize() {
+    //     StoreOrders storeOrders = StoreOrders.getInstance();
+    //     storeOrders.startNewOrder();
+    // }
 }
