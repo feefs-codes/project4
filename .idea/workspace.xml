@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="087bbe68-09b6-4ba8-9431-dbc49bf8c4c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/createyourownpizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/createyourownpizza.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/currentorder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/currentorder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/deluxepizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/deluxepizza.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/meatzzapizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/meatzzapizza.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/pepperonipizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/pepperonipizza.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/seafoodpizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/seafoodpizza.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/specialtypizzas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/specialtypizzas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/storeorders.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/storeorders.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_images/supremepizza.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GUI_images/supremepizza.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CurrentOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CurrentOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CustomizePizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CustomizePizzaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/Sauce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/Sauce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/SpecialtyPizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/SpecialtyPizzaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/StoreOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/StoreOrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/Topping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/Topping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/current-order.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/current-order.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/customize-pizza.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/customize-pizza.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/main-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/main-menu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/specialty-pizzas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/specialty-pizzas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/store-orders.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/store-orders.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2YNnPNCnafdkGpDMhofNtYNnUnh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,8 +60,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/CS213/project4"
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "pranay",
+    "last_opened_file_path": "/Users/pranaybhatt/Downloads/College Textbooks/Junior fall/Software Methodology/project4",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -75,6 +82,26 @@
       <recent name="com.example.rupizza" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="PizzaManagerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.rupizza.PizzaManagerMain" />
+      <module name="rupizza" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.rupizza.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PizzaManagerMain" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,5 +112,20 @@
       <updated>1700374881626</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

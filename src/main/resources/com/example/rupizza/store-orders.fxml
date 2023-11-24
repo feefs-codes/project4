@@ -48,13 +48,13 @@
                   <RowConstraints maxHeight="184.8" minHeight="10.0" prefHeight="12.599987792968705" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <TextArea prefHeight="205.0" prefWidth="581.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextArea prefHeight="205.0" prefWidth="581.0" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="orderDetails" editable="false"/>
                   <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="617.0" GridPane.columnIndex="1">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Order Number: " />
-                        <ChoiceBox prefWidth="150.0" />
+                        <ChoiceBox prefWidth="150.0" fx:id="orderNumber"/>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Order Total: $ " textAlignment="RIGHT" wrappingWidth="122.3734130859375" />
-                        <TextField />
+                        <TextField editable="false" fx:id="orderTotal" />
                      </children>
                   </HBox>
                </children>
@@ -71,10 +71,10 @@
                   <RowConstraints maxHeight="62.799975585937496" minHeight="10.0" prefHeight="10.5999755859375" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Export Store Orders" GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Export Store Orders" GridPane.columnIndex="2" fx:id="exportStoreOrdersButton" onAction="#handleExportStoreOrdersButtonAction"/>
                   <HBox alignment="CENTER" prefHeight="57.0" prefWidth="275.0" GridPane.columnIndex="1">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Cancel Order" />
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Cancel Order" fx:id="cancelOrderButton" onAction="#handleCancelOrderButtonAction"/>
                      </children>
                   </HBox>
                </children>
