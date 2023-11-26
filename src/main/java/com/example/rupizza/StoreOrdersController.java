@@ -61,6 +61,12 @@ public class StoreOrdersController {
             orderDetails.setText("");
             orderTotal.setText("");
         }
+        // show alert that order has been cancelled
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Cancelled Order");
+        alert.setHeaderText(null);
+        alert.setContentText("Order " + order.getOrderNumber() + " has been cancelled.");
+        alert.showAndWait();
     }
 
     @FXML
