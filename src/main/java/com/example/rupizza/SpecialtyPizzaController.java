@@ -1,7 +1,6 @@
 package com.example.rupizza;
 
 import java.util.Optional;
-
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -38,12 +37,16 @@ public class SpecialtyPizzaController {
 
         orderButton.setDisable(true);
 
+        Image image = new Image(getClass().getResourceAsStream("/GUI_images/specialtypizzas.png"));
+        pizzaImageView.setImage(image);
+
         // add listener to pizzaTypeComboBox to update toppings, sauce, and price textfields
         pizzaTypeComboBox.getSelectionModel().selectedItemProperty().addListener((observableValue, oldValue, newValue) -> {
+            Image newImage = new Image(getClass().getResourceAsStream("/GUI_images/" + newValue.toLowerCase() + "pizza.png"));
+            pizzaImageView.setImage(newImage);
             sizeToggleGroup.selectToggle(smallRadioButton);
             extraCheeseCheckBox.setSelected(false);
             extraSauceCheckBox.setSelected(false);
-            // Image image = new Image("/GUI_images/" + newValue + ".png");
 
             keyReleasedProperty();
             updatePizzaInfo();
@@ -63,12 +66,7 @@ public class SpecialtyPizzaController {
 
     @FXML
     private void keyReleasedProperty() {
-        if (pizzaTypeComboBox.getValue() != null && sizeToggleGroup.getSelectedToggle() != null) {
-            orderButton.setDisable(false);
-        }
-        else {
-            orderButton.setDisable(true);
-        }
+        orderButton.setDisable(pizzaTypeComboBox.getValue() == null || sizeToggleGroup.getSelectedToggle() == null);
     }
 
     private void updatePizzaInfo() {
