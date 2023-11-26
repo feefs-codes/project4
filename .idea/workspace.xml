@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="087bbe68-09b6-4ba8-9431-dbc49bf8c4c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CurrentOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CurrentOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CustomizePizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CustomizePizzaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/SpecialtyPizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/SpecialtyPizzaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/StoreOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/StoreOrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/specialty-pizzas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/rupizza/specialty-pizzas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store_orders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/store_orders.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,23 +44,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;pranay&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pranaybhatt/Downloads/College Textbooks/Junior fall/Software Methodology/project4&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "pranay",
+    "last_opened_file_path": "/Users/pranaybhatt/Downloads/College Textbooks/Junior fall/Software Methodology/project4/src/main/java/com/example/rupizza",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.rupizza" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/rupizza" />
       <recent name="C:\CS213\project4\src\main\resources\com\example\rupizza" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
