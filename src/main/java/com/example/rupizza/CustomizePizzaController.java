@@ -121,6 +121,15 @@ public class CustomizePizzaController {
                 pizza.toppings.add(Topping.getTopping(topping));
             }
         }
+        // if there are less than 3 toppings, have an alert pop up and tell the user to add more toppings
+        if (pizza.toppings.size() < 3) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Not Enough Toppings");
+            alert.setContentText("Please add at least 3 toppings to your pizza.");
+            alert.showAndWait();
+            return;
+        }
         
         Order currentOrder = storeOrders.getCurrentOrder();
         if (currentOrder != null) {
