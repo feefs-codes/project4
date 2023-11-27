@@ -28,7 +28,7 @@ public class StoreOrdersController {
         });
         cancelOrderButton.setOnAction((event) -> {
             handleCancelOrderButtonAction();
-            updateOrderInfo();
+            // updateOrderInfo();
             // orderNumber.getSelectionModel().clearSelection();
             // orderNumber.setValue(null);
         });
@@ -39,6 +39,9 @@ public class StoreOrdersController {
     }
     private void updateOrderInfo() {
         // get first order in orders, and display its order number, pizzas, and total
+        if (orderNumber.getValue() == null) {
+            return;
+        }
         Order order = storeOrders.getOrder(Integer.parseInt(orderNumber.getValue()));
         if (order != null) {
             List<String> pizzaStrings = order.getPizzas().stream()
@@ -61,6 +64,7 @@ public class StoreOrdersController {
         if (order != null) {
             storeOrders.removeFromOrders(order);
             orderNumber.getItems().remove(order.getOrderNumber() + "");
+            orderNumber.setValue(null);
             // set order number dropdown to empty
             // orderNumber.getSelectionModel().clearSelection();
             orderDetails.setText("");

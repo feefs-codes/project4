@@ -23,7 +23,7 @@ public class CustomizePizzaController {
     @FXML
     private ListView<String> availableToppingsListView, selectedToppingsListView;
 
-    String[] toppings = {"Sausage", "Pepperoni", "Green Pepper", "Onion", "Mushroom", "Ham", "Black Olive", "Beef", "Shrimp", "Squid", "Crab Meats"};
+    String[] toppings = {"Sausage", "Pepperoni", "Green Pepper", "Onion", "Mushroom", "Ham", "Black Olive", "Beef", "Shrimp", "Squid", "Crab Meats", "Jalapeno", "Pineapple"};
 
     StoreOrders storeOrders = StoreOrders.getInstance();
 
@@ -62,10 +62,6 @@ public class CustomizePizzaController {
 
     private void updateCustomPizzaInfo() {
         Pizza pizza = PizzaMaker.createPizza("Custom");
-        // Size size = Size.valueOf(pizzaSizeComboBox.getValue().toUpperCase());
-        // if (size != null) {
-        //     pizza.setSize(size);
-        // }
         String selectedSize = pizzaSizeComboBox.getValue();
         if (selectedSize != null) {
             pizza.setSize(Size.valueOf(selectedSize.toUpperCase()));
