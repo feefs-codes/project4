@@ -59,9 +59,9 @@ public class StoreOrders {
                 for (Pizza pizza : order.getPizzas()) {
                     writer.println(pizza.toString());
                 }
-                writer.println("Subtotal: $" + order.calculateSubTotal());
-                writer.println("Tax: $" + order.calculateTax());
-                writer.println("Total: $" + order.calculateTotal());
+                writer.println("Subtotal: " + String.format("$%.2f", order.calculateSubTotal()));
+                writer.println("Tax: " + String.format("$%.2f", order.calculateTax()));
+                writer.println("Total: " + String.format("$%.2f", order.calculateTotal()));
                 writer.println();
             }
         } catch (Exception e) {
