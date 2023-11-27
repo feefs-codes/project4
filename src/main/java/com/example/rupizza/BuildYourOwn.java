@@ -10,9 +10,9 @@ public class BuildYourOwn extends Pizza {
     @Override
     public double price() {
         double price = switch (size) {
-            case SMALL -> 10.99;
-            case MEDIUM -> 12.99;
-            case LARGE -> 14.99;
+            case SMALL -> 8.99;
+            case MEDIUM -> 10.99;
+            case LARGE -> 12.99;
         };
         if (extraSauce) {
             price += 1;
@@ -20,8 +20,10 @@ public class BuildYourOwn extends Pizza {
         if (extraCheese) {
             price += 1;
         }
-        if (toppings.size() > 3) {
+        if (toppings.size() >= 3 && toppings.size() <= 7) {
             price += (toppings.size() - 3) * 1.49;
+        } else {
+            price = 0;
         }
         return price;
     }
