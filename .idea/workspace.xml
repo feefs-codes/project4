@@ -9,6 +9,12 @@
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/BuildYourOwn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/BuildYourOwn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CustomizePizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/CustomizePizzaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/SpecialtyPizzaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/SpecialtyPizzaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/StoreOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/StoreOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rupizza/StoreOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rupizza/StoreOrdersController.java" afterDir="false" />
+>>>>>>> fec28d243766b07df85e918479ddb744b618c51d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +56,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
+<<<<<<< HEAD
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/CS213/project2",
+=======
+    "git-widget-placeholder": "pranay",
+    "last_opened_file_path": "/Users/pranaybhatt/Downloads/College Textbooks/Junior fall/Software Methodology/project4/src/main/java/com/example/rupizza",
+>>>>>>> fec28d243766b07df85e918479ddb744b618c51d
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",

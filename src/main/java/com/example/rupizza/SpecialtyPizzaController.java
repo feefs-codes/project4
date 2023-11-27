@@ -85,7 +85,7 @@ public class SpecialtyPizzaController {
             if (extraSauceCheckBox.isSelected()) {
                 pizza.addExtraSauce();
             }
-            priceTextField.setText(String.valueOf(pizza.price()));
+            priceTextField.setText(String.format("$%.2f", pizza.price()));
         }
     }
 
