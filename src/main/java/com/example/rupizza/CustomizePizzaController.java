@@ -91,7 +91,7 @@ public class CustomizePizzaController {
             }
         }
         
-        priceTextField.setText(String.valueOf(pizza.price()));
+        priceTextField.setText(String.format("$%.2f", pizza.price()));
     }
 
     @FXML

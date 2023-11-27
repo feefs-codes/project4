@@ -29,6 +29,8 @@ public class StoreOrdersController {
         cancelOrderButton.setOnAction((event) -> {
             handleCancelOrderButtonAction();
             updateOrderInfo();
+            // orderNumber.getSelectionModel().clearSelection();
+            // orderNumber.setValue(null);
         });
         exportStoreOrdersButton.setOnAction((event) -> {
             handleExportStoreOrdersButtonAction();
@@ -46,6 +48,7 @@ public class StoreOrdersController {
             orderTotal.setText(String.format("$%.2f", order.calculateTotal()));
         }
         else {
+            // orderNumber.getSelectionModel().clearSelection();
             orderDetails.setText("");
             orderTotal.setText("");
         }
@@ -58,6 +61,8 @@ public class StoreOrdersController {
         if (order != null) {
             storeOrders.removeFromOrders(order);
             orderNumber.getItems().remove(order.getOrderNumber() + "");
+            // set order number dropdown to empty
+            // orderNumber.getSelectionModel().clearSelection();
             orderDetails.setText("");
             orderTotal.setText("");
         }
