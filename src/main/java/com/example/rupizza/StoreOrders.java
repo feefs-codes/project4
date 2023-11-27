@@ -7,7 +7,7 @@ public class StoreOrders {
 
     private static StoreOrders instance = null;
 
-    private int orderNumber = 1;
+    private static int orderNumber = 1;
     private ArrayList<Order> orders;
 
     public StoreOrders() {
