@@ -7,7 +7,7 @@ public class StoreOrders {
 
     private static StoreOrders instance = null;
 
-    private static int orderNumber = 1;
+    private int orderNumber = 1;
     private ArrayList<Order> orders;
 
     public StoreOrders() {
@@ -23,14 +23,6 @@ public class StoreOrders {
 
     public void startNewOrder() {
         Order order = new Order(orderNumber++, new ArrayList<>());
-        orders.add(order);
-    }
-
-    public int getOrderNumber() {
-        return orderNumber;
-    }
-
-    public void addToOrders(Order order) {
         orders.add(order);
     }
 

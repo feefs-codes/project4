@@ -61,7 +61,6 @@ public class CurrentOrderController {
     private void handlePlaceOrderButtonAction() {
         Order currentOrder = storeOrders.getCurrentOrder();
         if (currentOrder != null && !currentOrder.getPizzas().isEmpty()) {
-            storeOrders.addToOrders(currentOrder);
             storeOrders.startNewOrder();
             updateOrderInfo();
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
