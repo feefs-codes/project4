@@ -1,2 +1,3 @@
 fixes left to do:
 - shouldn't be able to cancel current order until it's been placed (or create a new order if current order is cancelled)
+- javadocs
