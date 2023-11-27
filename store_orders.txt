@@ -1,7 +1,0 @@
-Order Number: 1
-Pizzas:
-Custom Pizza | LARGE | Tomato | Toppings: {Sausage, Pepperoni, Green Pepper, Onion, Mushroom, Ham, Black Olive} | Extra Sauce | Extra Cheese
-Subtotal: $22.95
-Tax: $1.52
-Total: $24.47
-
