@@ -29,6 +29,11 @@ public class CurrentOrderController {
 
     StoreOrders storeOrders = StoreOrders.getInstance();
 
+    /**
+     * Initializes event handlers and properties in the Current Order GUI:
+     * updates the order info, if the Remove Pizza Button is active and activated,
+     * then call a helper method that performs the action done by the button and update the order info.
+     */
     public void initialize() {
         updateOrderInfo();
 
@@ -38,6 +43,10 @@ public class CurrentOrderController {
         });
     }
 
+    /**
+     * Helper method that updates the current order information including:
+     * what pizzas are in the order, the subtotal, tax, and total price.
+     */
     private void updateOrderInfo() {
         if (storeOrders.getCurrentOrder() == null) {
             return;
@@ -52,6 +61,10 @@ public class CurrentOrderController {
         total.setText(String.format("$%.2f", storeOrders.getCurrentOrder().calculateTotal()));
     }
 
+    /**
+     * Handles the "Remove Pizza" button.
+     * When a pizza is selected to be removed, then that pizza will be removed from the current order.
+     */
     @FXML
     private void handleRemovePizzaButtonAction() {
         String selectedPizza = pizzasListView.getSelectionModel().getSelectedItem();
@@ -63,6 +76,11 @@ public class CurrentOrderController {
         }
     }
 
+    /**
+     * Handles the "Place Order" button.
+     * If the current order has items when this button is pressed, that order will be placed and the GUI will alert the
+     * user so. Another order will be started.
+     */
     @FXML
     private void handlePlaceOrderButtonAction() {
         Order currentOrder = storeOrders.getCurrentOrder();

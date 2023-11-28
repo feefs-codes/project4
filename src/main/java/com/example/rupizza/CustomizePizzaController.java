@@ -7,6 +7,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+/**
+ * CustomizePizzaController class handles the events triggered on the Build-Your-Own/Customized Pizza GUI.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class CustomizePizzaController {
     @FXML
     private TextField priceTextField;
@@ -27,6 +32,12 @@ public class CustomizePizzaController {
 
     StoreOrders storeOrders = StoreOrders.getInstance();
 
+    /**
+     * Initializes event handlers and properties in the Customize Pizza GUI:
+     * setting up and configuring all radio buttons/checkboxes and their toggle groups,
+     * using listeners to track changes in text fields,
+     * and disabling the addToOrder button unless there are valid inputs in each tab.
+     */
     public void initialize() {
         pizzaSizeComboBox.setItems(FXCollections.observableArrayList("Small", "Medium", "Large"));
         tomatoSauceRadioButton.setToggleGroup(sauceToggleGroup);
@@ -60,6 +71,10 @@ public class CustomizePizzaController {
         });
     }
 
+    /**
+     * Updates the information in the custom pizza based on user input.
+     * Price of the pizza is also updated and displayed.
+     */
     private void updateCustomPizzaInfo() {
         Pizza pizza = PizzaMaker.createPizza("Custom");
         String selectedSize = pizzaSizeComboBox.getValue();
@@ -90,6 +105,11 @@ public class CustomizePizzaController {
         priceTextField.setText(String.format("$%.2f", pizza.price()));
     }
 
+    /**
+     * Handles the "Add Custom Pizza" button.
+     * Ensures all user input is valid to activate the button and confirms when pizza is added to order,
+     * or communicates there is invalid input.
+     */
     @FXML
     private void handleAddCustomPizzaButton() {
         Pizza pizza = PizzaMaker.createPizza("Custom");
@@ -148,6 +168,12 @@ public class CustomizePizzaController {
         
     }
 
+    /**
+     * Handles "Add Topping" button, where if an available topping is selected when pressed,
+     * then that topping will be added to the custom pizza.
+     * This also updates the view of toppings where it is removed from the list of available toppings
+     * and is added to the list of toppings already added.
+     */
     @FXML
     private void handleAddToppingButton() {
         // add selected topping to selectedToppingsListView
@@ -161,6 +187,12 @@ public class CustomizePizzaController {
         addToppingButton.setDisable(selectedToppingsListView.getItems().size() >= 7);
     }
 
+    /**
+     * Handles "Remove Topping" button, where if an added topping is selected when pressed,
+     * then that topping will be removed from the custom pizza.
+     * This also updates the view of toppings where it is removed from the list of toppings already added
+     * and is added to the list of available toppings.
+     */
     @FXML
     private void handleRemoveToppingButton() {
         // add selected topping to availableToppingsListView
@@ -173,6 +205,9 @@ public class CustomizePizzaController {
         addToppingButton.setDisable(selectedToppingsListView.getItems().size() >= 7);
     }
 
+    /**
+     * Keeps the "Add to Order" button disabled if the size and sauce selections are not chosen.
+     */
     @FXML
     private void keyReleasedProperty() {
         boolean sizeSelected = pizzaSizeComboBox.getSelectionModel().getSelectedItem() != null;

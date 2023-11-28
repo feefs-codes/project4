@@ -7,7 +7,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * MainMenuController class handles the events triggered on the main menu GUI.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class MainMenuController {
+
+    /**
+     * Opens Specialty GUI when button on main menu is selected.
+     * @param event that specialty button on main menu is selected
+     */
     @FXML
     private void openSpecialtyPizzaGUI(ActionEvent event) {
         try {
@@ -26,6 +36,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens Customize Pizza GUI when button on main menu is selected.
+     * @param event that customize pizza button on main menu is selected
+     */
     @FXML
     private void openCustomizePizzaGUI(ActionEvent event) {
         try {
@@ -44,6 +58,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens Current Order GUI when button on main menu is selected.
+     * @param event that current order button on main menu is selected
+     */
     @FXML
     private void openCurrentOrderGUI(ActionEvent event) {
         try {
@@ -62,6 +80,10 @@ public class MainMenuController {
         }
     }
 
+    /**
+     * Opens Store Orders GUI when button on main menu is selected.
+     * @param event that store orders button on main menu is selected
+     */
     @FXML
     private void openStoreOrdersGUI(ActionEvent event) {
         try {
@@ -79,10 +101,4 @@ public class MainMenuController {
             e.printStackTrace();
         }
     }
-
-    // @FXML
-    // public void initialize() {
-    //     StoreOrders storeOrders = StoreOrders.getInstance();
-    //     storeOrders.startNewOrder();
-    // }
 }

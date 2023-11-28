@@ -1,6 +1,16 @@
 package com.example.rupizza;
 
+/**
+ * Supreme class inherits from Pizza class and represents a supreme specialty pizza.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class Supreme extends Pizza {
+
+    /**
+     * Default Supreme constructor;
+     * constructs the supreme pizza object and adds necessary toppings.
+     */
     public Supreme() {
         super();
         this.sauce = Sauce.TOMATO;
@@ -13,6 +23,10 @@ public class Supreme extends Pizza {
         toppings.add(Topping.MUSHROOM);
     }
 
+    /**
+     * Returns the price of pizza based on user selection.
+     * @return price
+     */
     @Override
     public double price() {
         double price = switch (size) {
@@ -29,6 +43,10 @@ public class Supreme extends Pizza {
         return price;
     }
 
+    /**
+     * Returns a string representation of supreme pizza.
+     * @return a string representation of supreme pizza.
+     */
     @Override
     public String toString() {
         String str = "Supreme Pizza | " + size.toString();

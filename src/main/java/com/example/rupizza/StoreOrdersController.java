@@ -7,6 +7,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+/**
+ * StoreOrdersController class handles the events triggered on the Store Orders GUI.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class StoreOrdersController {
     @FXML
     private TextField orderTotal;
@@ -19,6 +24,10 @@ public class StoreOrdersController {
 
     StoreOrders storeOrders = StoreOrders.getInstance();
 
+    /**
+     * Initializes event handlers and properties in the Store Orders GUI:
+     * updates the order list, and initializes the order selection model, cancel order button, and export store orders button.
+     */
     public void initialize() {
         for (Order order : storeOrders.getAllOrders()) {
             orderNumber.getItems().add(order.getOrderNumber() + "");
@@ -28,15 +37,15 @@ public class StoreOrdersController {
         });
         cancelOrderButton.setOnAction((event) -> {
             handleCancelOrderButtonAction();
-            // updateOrderInfo();
-            // orderNumber.getSelectionModel().clearSelection();
-            // orderNumber.setValue(null);
         });
         exportStoreOrdersButton.setOnAction((event) -> {
             handleExportStoreOrdersButtonAction();
         });
-        
     }
+
+    /**
+     * Helper method that lists the order information.
+     */
     private void updateOrderInfo() {
         // get first order in orders, and display its order number, pizzas, and total
         if (orderNumber.getValue() == null) {
@@ -57,12 +66,15 @@ public class StoreOrdersController {
         }
     }
 
+    /**
+     * Handles the "Cancel Order" button.
+     * When an order is selected to be canceled, then that order will be removed from the store orders.
+     * If selected order is current order, tell user to place order first before cancelling.
+     */
     @FXML
     private void handleCancelOrderButtonAction() {
-        // remove order from orders
         Order order = storeOrders.getOrder(Integer.parseInt(orderNumber.getValue()));
         if (order != null) {
-            // if order is current order, tell user to place order first before cancelling
             if (order == storeOrders.getCurrentOrder()) {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
                 alert.setTitle("Cannot Cancel Order");
@@ -87,6 +99,10 @@ public class StoreOrdersController {
         alert.showAndWait();
     }
 
+    /**
+     * Handles the "Export Store Orders" button.
+     * Exports orders to store_orders.txt in project.
+     */
     @FXML
     private void handleExportStoreOrdersButtonAction() {
         storeOrders.exportOrders();

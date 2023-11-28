@@ -1,12 +1,26 @@
 package com.example.rupizza;
 
+/**
+ * Pepperoni class inherits from Pizza class and represents a pepperoni specialty pizza.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class Pepperoni extends Pizza {
+
+    /**
+     * Default Pepperoni constructor;
+     * constructs the pepperoni pizza object and adds necessary toppings.
+     */
     public Pepperoni() {
         super();
         this.sauce = Sauce.TOMATO;
         toppings.add(Topping.PEPPERONI);
     }
 
+    /**
+     * Returns the price of pizza based on user selection.
+     * @return price
+     */
     @Override
     public double price() {
         double price = switch (size) {
@@ -23,6 +37,10 @@ public class Pepperoni extends Pizza {
         return price;
     }
 
+    /**
+     * Returns a string representation of pepperoni pizza.
+     * @return a string representation of pepperoni pizza.
+     */
     @Override
     public String toString() {
         String str = "Pepperoni Pizza | " + size.toString();

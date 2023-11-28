@@ -7,7 +7,18 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * PizzaManagerMain class launches the Pizza Manager GUI.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class PizzaManagerMain extends Application {
+
+    /**
+     * Starts Pizza Manager GUI
+     * @param stage stage
+     * @throws IOException ...
+     */
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(PizzaManagerMain.class.getResource("main-menu.fxml"));
@@ -17,6 +28,10 @@ public class PizzaManagerMain extends Application {
         stage.show();
     }
 
+    /**
+     * Launches Pizza Manager GUI
+     * @param args ...
+     */
     public static void main(String[] args) {
         launch();
     }

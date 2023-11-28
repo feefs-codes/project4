@@ -1,6 +1,16 @@
 package com.example.rupizza;
 
+/**
+ * Meatzza class inherits from Pizza class and represents a meatzza specialty pizza.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class Meatzza extends Pizza {
+
+    /**
+     * Default Meatzza constructor;
+     * constructs the meatzza pizza object and adds necessary toppings.
+     */
     public Meatzza() {
         super();
         this.sauce = Sauce.TOMATO;
@@ -10,6 +20,10 @@ public class Meatzza extends Pizza {
         toppings.add(Topping.HAM);
     }
 
+    /**
+     * Returns the price of pizza based on user selection.
+     * @return price
+     */
     @Override
     public double price() {
         double price = switch (size) {
@@ -26,6 +40,10 @@ public class Meatzza extends Pizza {
         return price;
     }
 
+    /**
+     * Returns a string representation of meatzza pizza.
+     * @return a string representation of meatzza pizza.
+     */
     @Override
     public String toString() {
         String str = "Meatzza Pizza | " + size.toString();

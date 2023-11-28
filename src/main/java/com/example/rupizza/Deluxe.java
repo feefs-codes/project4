@@ -1,8 +1,18 @@
 package com.example.rupizza;
 
+/**
+ * Deluxe class inherits from Pizza class and represents a deluxe specialty pizza.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class Deluxe extends Pizza {
 
     Sauce deluxeSauce = Sauce.TOMATO;
+
+    /**
+     * Default Deluxe constructor;
+     * constructs the deluxe pizza object and adds necessary toppings.
+     */
     public Deluxe() {
         super();
         this.sauce = Sauce.TOMATO;
@@ -13,6 +23,10 @@ public class Deluxe extends Pizza {
         toppings.add(Topping.MUSHROOM);
     }
 
+    /**
+     * Returns the price of pizza based on user selection.
+     * @return price
+     */
     @Override
     public double price() {
         double price = switch (size) {
@@ -29,6 +43,10 @@ public class Deluxe extends Pizza {
         return price;
     }
 
+    /**
+     * Returns a string representation of deluxe pizza.
+     * @return a string representation of deluxe pizza.
+     */
     @Override
     public String toString() {
         String str = "Deluxe Pizza | " + size.toString();

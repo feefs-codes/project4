@@ -8,6 +8,11 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
+/**
+ * SpecialtyPizzaController class handles the events triggered on the Specialty Pizza GUI.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class SpecialtyPizzaController {
     @FXML
     private ComboBox<String> pizzaTypeComboBox;
@@ -28,7 +33,12 @@ public class SpecialtyPizzaController {
 
     StoreOrders storeOrders = StoreOrders.getInstance();
 
-
+    /**
+     * Initializes event handlers and properties in the Specialty Pizza GUI:
+     * setting up and configuring all radio buttons/checkboxes and their toggle groups,
+     * using listeners to track changes in text fields,
+     * and disabling the order button unless there are valid inputs in each tab.
+     */
     public void initialize() {
         pizzaTypeComboBox.setItems(FXCollections.observableArrayList("Deluxe", "Supreme", "Meatzza", "Seafood", "Pepperoni"));
         smallRadioButton.setToggleGroup(sizeToggleGroup);
@@ -64,11 +74,18 @@ public class SpecialtyPizzaController {
         });
     }
 
+    /**
+     * Keeps the "Order" button disabled if the pizza type and size selections are not chosen.
+     */
     @FXML
     private void keyReleasedProperty() {
         orderButton.setDisable(pizzaTypeComboBox.getValue() == null || sizeToggleGroup.getSelectedToggle() == null);
     }
 
+    /**
+     * Updates the information in the specialty pizza based on specialty pizza classes and user input.
+     * Price of the pizza is also updated and displayed.
+     */
     private void updatePizzaInfo() {
         Pizza pizza = PizzaMaker.createPizza(pizzaTypeComboBox.getValue());
         if (pizza != null) {
@@ -89,6 +106,10 @@ public class SpecialtyPizzaController {
         }
     }
 
+    /**
+     * Handles the "Order" button.
+     * Ensures all user input is valid to activate the button and confirms when pizza is added to order.
+     */
     @FXML
     private void handleOrderButtonAction() {
         String sizeString = ((RadioButton) sizeToggleGroup.getSelectedToggle()).getText();

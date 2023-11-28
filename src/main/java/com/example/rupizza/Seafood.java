@@ -1,7 +1,16 @@
 package com.example.rupizza;
 
+/**
+ * Seafood class inherits from Pizza class and represents a seafood specialty pizza.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class Seafood extends Pizza {
 
+    /**
+     * Default Seafood constructor;
+     * constructs the seafood pizza object and adds necessary toppings.
+     */
     public Seafood() {
         super();
         this.sauce = Sauce.ALFREDO;
@@ -10,6 +19,10 @@ public class Seafood extends Pizza {
         toppings.add(Topping.CRAB_MEATS);
     }
 
+    /**
+     * Returns the price of pizza based on user selection.
+     * @return price
+     */
     @Override
     public double price() {
         double price = switch (size) {
@@ -26,6 +39,10 @@ public class Seafood extends Pizza {
         return price;
     }
 
+    /**
+     * Returns a string representation of seafood pizza.
+     * @return a string representation of seafood pizza.
+     */
     @Override
     public String toString() {
         String str = "Seafood Pizza | " + size.toString();
