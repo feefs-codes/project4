@@ -62,6 +62,15 @@ public class StoreOrdersController {
         // remove order from orders
         Order order = storeOrders.getOrder(Integer.parseInt(orderNumber.getValue()));
         if (order != null) {
+            // if order is current order, tell user to place order first before cancelling
+            if (order == storeOrders.getCurrentOrder()) {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Cannot Cancel Order");
+                alert.setHeaderText(null);
+                alert.setContentText("Cannot cancel current order. Please place order first.");
+                alert.showAndWait();
+                return;
+            }
             storeOrders.removeFromOrders(order);
             orderNumber.getItems().remove(order.getOrderNumber() + "");
             orderNumber.setValue(null);
