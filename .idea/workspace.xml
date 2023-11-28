@@ -41,7 +41,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "fiona"
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RecentsManager">
