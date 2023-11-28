@@ -13,6 +13,12 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+/**
+ * CurrentOrderController class handles the events triggered on the Current Order GUI.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
+
 public class CurrentOrderController {
     @FXML
     private TextField orderNumber, subTotal, tax, total;

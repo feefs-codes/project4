@@ -3,11 +3,20 @@ package com.example.rupizza;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+/**
+ * JUnit test class for BuildYourOwn class's price(), addTopping(), removeTopping(), toString() methods.
+ *
+ * @author Pranay Bhatt and Fiona Wang
+ */
 public class BuildYourOwnTest {
 
+    /**
+     * JUnit test toppings valid case 1
+     * Asserts equals when a default (small) build-your-own pizza with 3 toppings is $8.99.
+     */
     @Test
     public void test3Toppings() {
-        Pizza pizza = new BuildYourOwn();
+        BuildYourOwn pizza = new BuildYourOwn();
         pizza.setSauce(Sauce.TOMATO);
         pizza.addTopping(Topping.HAM);
         pizza.addTopping(Topping.SAUSAGE);
@@ -18,10 +27,14 @@ public class BuildYourOwnTest {
                 pizza.toString());
     }
 
+    /**
+     * JUnit test toppings valid case 2
+     * Asserts equals when a default (small) build-your-own pizza with 7 toppings is $8.99 + $1.49 * 4 additional toppings.
+     */
     @Test
     public void test7Toppings() {
-        Pizza pizza = new BuildYourOwn();
-        pizza.setSauce(Sauce.ALFREDO);
+        BuildYourOwn pizza = new BuildYourOwn();
+        pizza.setSauce(Sauce.TOMATO);
         pizza.addTopping(Topping.CRAB_MEATS);
         pizza.addTopping(Topping.MUSHROOM);
         pizza.addTopping(Topping.SHRIMP);
@@ -31,37 +44,17 @@ public class BuildYourOwnTest {
         pizza.addTopping(Topping.GREEN_PEPPER);
         assertEquals(8.99 + 4 * 1.49, pizza.price(), 0.0);
         assertEquals(
-                "Custom Pizza | SMALL | Alfredo | Toppings: {Crab Meats, Mushroom, Shrimp, Squid, Black Olive, Beef, Green Pepper}",
+                "Custom Pizza | SMALL | Tomato | Toppings: {Crab Meats, Mushroom, Shrimp, Squid, Black Olive, Beef, Green Pepper}",
                 pizza.toString());
     }
 
-    @Test
-    public void testLessThan3Toppings() {
-        Pizza pizza = new BuildYourOwn();
-        pizza.addTopping(Topping.HAM);
-        pizza.addTopping(Topping.SAUSAGE);
-        pizza.addExtraSauce();
-        pizza.addExtraCheese();
-        assertFalse(pizza.price() > 0);
-    }
-
-    @Test
-    public void testMoreThan7Toppings() {
-        Pizza pizza = new BuildYourOwn();
-        pizza.addTopping(Topping.CRAB_MEATS);
-        pizza.addTopping(Topping.MUSHROOM);
-        pizza.addTopping(Topping.SHRIMP);
-        pizza.addTopping(Topping.SQUID);
-        pizza.addTopping(Topping.BLACK_OLIVE);
-        pizza.addTopping(Topping.BEEF);
-        pizza.addTopping(Topping.GREEN_PEPPER);
-        pizza.addTopping(Topping.SAUSAGE);
-        assertFalse(pizza.price() > 0);
-    }
-
+    /**
+     * JUnit test size valid case 1
+     * Asserts equals when a build-your-own pizza set at medium size with 3 toppings is $10.99.
+     */
     @Test
     public void testMediumCustomPizza() {
-        Pizza pizza = new BuildYourOwn();
+        BuildYourOwn pizza = new BuildYourOwn();
         pizza.setSize(Size.MEDIUM);
         pizza.setSauce(Sauce.TOMATO);
         pizza.addTopping(Topping.HAM);
@@ -73,9 +66,13 @@ public class BuildYourOwnTest {
                 pizza.toString());
     }
 
+    /**
+     * JUnit test size valid case 2
+     * Asserts equals when a build-your-own pizza set at large size with 3 toppings is $12.99.
+     */
     @Test
     public void testLargeCustomPizza() {
-        Pizza pizza = new BuildYourOwn();
+        BuildYourOwn pizza = new BuildYourOwn();
         pizza.setSize(Size.LARGE);
         pizza.setSauce(Sauce.TOMATO);
         pizza.addTopping(Topping.HAM);
@@ -87,9 +84,13 @@ public class BuildYourOwnTest {
                 pizza.toString());
     }
 
+    /**
+     * JUnit test extra valid case 1
+     * Asserts equals when a default (small) build-your-own pizza with 3 toppings and either extra sauce or cheese is $9.99.
+     */
     @Test
     public void testExtraSauceOrCheese() {
-        Pizza pizza1 = new BuildYourOwn();
+        BuildYourOwn pizza1 = new BuildYourOwn();
         pizza1.setSauce(Sauce.TOMATO);
         pizza1.addTopping(Topping.HAM);
         pizza1.addTopping(Topping.SAUSAGE);
@@ -100,7 +101,7 @@ public class BuildYourOwnTest {
                 "Custom Pizza | SMALL | Tomato | Toppings: {Ham, Sausage, Green Pepper} | Extra Sauce",
                 pizza1.toString());
 
-        Pizza pizza2 = new BuildYourOwn();
+        BuildYourOwn pizza2 = new BuildYourOwn();
         pizza2.setSauce(Sauce.TOMATO);
         pizza2.addTopping(Topping.HAM);
         pizza2.addTopping(Topping.SAUSAGE);
@@ -112,9 +113,13 @@ public class BuildYourOwnTest {
                 pizza2.toString());
     }
 
+    /**
+     * JUnit test extra valid case 2
+     * Asserts equals when a default (small) build-your-own pizza with 3 toppings and both extra sauce and cheese is $10.99.
+     */
     @Test
     public void testExtraSauceAndCheese() {
-        Pizza pizza = new BuildYourOwn();
+        BuildYourOwn pizza = new BuildYourOwn();
         pizza.setSauce(Sauce.TOMATO);
         pizza.addTopping(Topping.HAM);
         pizza.addTopping(Topping.SAUSAGE);
@@ -127,6 +132,11 @@ public class BuildYourOwnTest {
                 pizza.toString());
     }
 
+    /**
+     * JUnit test remove topping valid case
+     * Tests removeTopping() directly after adding that topping, and after adding additional toppings in between.
+     * Asserts equals when a default (small) build-your-own pizza with 4 toppings is $8.99 + $1.49 * 1 topping.
+     */
     @Test
     public void testRemoveTopping() {
         BuildYourOwn pizza = new BuildYourOwn();

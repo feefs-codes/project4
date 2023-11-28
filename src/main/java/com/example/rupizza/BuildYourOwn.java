@@ -2,14 +2,27 @@ package com.example.rupizza;
 
 import java.util.stream.Collectors;
 
+
 /**
+ * BuildYourOwn class inherits from Pizza class and represents a user-customized pizza.
  *
+ * @author Pranay Bhatt and Fiona Wang
  */
+
 public class BuildYourOwn extends Pizza {
+
+    /**
+     * Default BuildYourOwn constructor;
+     * constructs a default Pizza object.
+     */
     public BuildYourOwn() {
         super();
     }
 
+    /**
+     * Returns the customized pizza price.
+     * @return pizza's price
+     */
     @Override
     public double price() {
         double price = switch (size) {
@@ -28,15 +41,27 @@ public class BuildYourOwn extends Pizza {
         }
         return price;
     }
-    
+
+    /**
+     * Adds a topping to the pizza's topping list.
+     * @param topping to add
+     */
     public void addTopping(Topping topping) {
         this.toppings.add(topping);
     }
 
+    /**
+     * Removes a topping from the pizza's topping list.
+     * @param topping to remove
+     */
     public void removeTopping(Topping topping) {
         this.toppings.remove(topping);
     }
 
+    /**
+     * Returns a string representation of the customized pizza.
+     * @return a string representation of the customized pizza
+     */
     @Override
     public String toString() {
         String toppingsString = toppings.stream()
